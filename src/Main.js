@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Storage from "./Storage";
 import Login from "./Login";
+import './index.css';
 
  
  
@@ -15,9 +16,9 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <ul className="header">
-            <li><NavLink className="NavLink" exact to="/">Home</NavLink></li>
-            <li><NavLink className="NavLink" to="/login">Login</NavLink></li>
+          <ul className="fixed flex flex-col top-0 left-0 h h-screen w-16 bg-black dark:bg-gray-900 shadow-lg">
+            <li><NavLink className="navLink" exact to="/">Home</NavLink></li>
+            <li><NavLink className="navLink" to="/login">Login</NavLink></li>
           </ul>
           <div className="content">
           <Routes> 
